@@ -1,13 +1,12 @@
 <template>
-  <footer>
-    <span>Build with</span>
-    <a href="https://nuxtjs.org" target="_blank">
-      <nuxt-icon class="nuxt-icon" />
-    </a>
-    <span>&</span>
-    <a href="https://docs.dev.to/api" rel="nofollow noopener" target="_blank">
-      <dev-to-icon />
-    </a>
+  <footer
+    class="lg:border-t border-light-border dark:border-dark-border transition-colors duration-300 ease-linear bg-white"
+  >
+    <div
+      class="container mx-auto px-4 flex flex-row items-center content-center justify-center py-4"
+    >
+      <p>Copyright {{ getFullYear() }} &copy; JetCare</p>
+    </div>
   </footer>
 </template>
 
@@ -18,6 +17,13 @@ export default {
   components: {
     DevToIcon,
     NuxtIcon,
+  },
+  methods: {
+    getFullYear() {
+      const d = new Date();
+      const n = d.getFullYear();
+      return n;
+    },
   },
 };
 </script>
