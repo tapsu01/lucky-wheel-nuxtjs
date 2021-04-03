@@ -15,11 +15,7 @@
             >Vòng Xoay May Mắn</canvas
           >
         </div>
-        <a
-          class="hc-luckywheel-btn absolute z-3 rounded-full"
-          href="javascript:;"
-          >Xoay</a
-        >
+        <a class="hc-luckywheel-btn" href="javascript:;">Xoay</a>
       </section>
     </div>
   </div>
@@ -50,5 +46,40 @@ export default Vue.extend({});
 
 .w-inherit {
   width: inherit;
+}
+
+.hc-luckywheel {
+  position: relative;
+  width: 500px; /*Change this when change size*/
+  height: 500px; /*Change this when change size*/
+  border-radius: 50%;
+  border: 16px solid #e44025;
+  box-shadow: 0 2px 3px #333, 0 0 2px #000;
+}
+
+.hc-luckywheel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+}
+
+.hc-luckywheel-btn {
+  position: absolute;
+  left: 210px; /*Change this when change size*/
+  top: 210px; /*Change this when change size*/
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #f4e9cc;
+  background-color: #e44025;
+  line-height: 80px;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }
 </style>
