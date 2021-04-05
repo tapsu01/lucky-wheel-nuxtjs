@@ -17,3 +17,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+html,
+body {
+  font-family: 'Quicksand Light', sans-serif;
+}
+</style>
